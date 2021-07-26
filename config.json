@@ -1,11 +1,11 @@
 {	
 	"prefix": "multi", 
 	"defaultSessionName": "bot", 
-	"zeksKey": "apikey",
+	"zeksKey": "fe2k0eyG7G8KsxsafjLrvho0PDq",
 	"autoRead": true,
 	"maxLimit": 30,
-	"ownerList": ["628xxxxxx@s.whatsapp.net", "6282xxxxxx@s.whatsapp.net"],
+	"ownerList": ["6282126059515@s.whatsapp.net"],
 	"apiUrl": "https://api.zeks.xyz",
-	"pack": "Sticker",
-	"author": "BOT"
+	"pack": "Filo Bot",
+	"author": "ryuux"
 }
