@@ -14,9 +14,9 @@
  
 </div>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/justpiple/whatsapp-bot/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Hangdeh/whatsapp-bot/)
 
-[![Run on Repl.it](https://repl.it/badge/github/justpiple/whatsapp-bot)](https://repl.it/github/justpiple/whatsapp-bot)
+[![Run on Repl.it](https://repl.it/badge/github/Hangdeh/whatsapp-bot)](https://repl.it/github/Hangdeh/whatsapp-bot)
 
 
 ### Install ⬇️
@@ -48,9 +48,9 @@ after start it you need to scan the qr
 #### Session name and options is optional
 ### Contact me
 
-- [TELEGRAM](https://t.me/justpiple)
-- [WHATSAPP](http://wa.me/62813309603730)
-- [GROUP CHAT WHATSAPP](https://chat.whatsapp.com/EV2o7Y4C2XNDT5AAQPZjqt)
+- [TELEGRAM](https://t.me/Ryu8x)
+- [WHATSAPP](http://wa.me/6282126059515)
+
 
 
 ## 🙏 Special Thanks to
