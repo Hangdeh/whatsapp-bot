@@ -30,7 +30,8 @@ const {
     othermenu,
 
     ownermenu,
-
+	
+info
 	
 
 } = require('./lib/text')
