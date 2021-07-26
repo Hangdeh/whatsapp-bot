@@ -8,14 +8,171 @@ let FormData = require('form-data')
 const afkJs = require('./lib/afk')
 const moment = require('moment-timezone');
 const {
+
     mess,
+
     menu,
-    ingfo
+
+    groupmenu,
+
+    downloadmenu,
+
+    stickermenu,
+
+    markermenu,
+
+    searchmenu,
+
+    educationmenu,
+
+    randommenu,
+
+    othermenu,
+
+    ownermenu,
+
+	
+
 } = require('./lib/text')
 const { color } = require('./lib/func')
 moment.tz.setDefault('Asia/Jakarta').locale('id');
 module.exports = handle = (client, Client) => {
     try {
+	    Client.cmd.on('menu', (data) => {
+
+
+
+				let po = client.prepareMessageFromContent(data.from, {
+
+
+
+					"listMessage":{
+
+                  "title": "*𝙵𝚒𝚕𝚘 𝙱𝚘𝚝*",
+
+                  "description": `\n*Hai ${data.pushname}*\n\n❏ *Time* : *${moment().utcOffset('1000').format('YYYY-MM-DD HH:mm:ss')} WIB*\n❏ *Prefix : Multi Prefix*\n❏ *Owner* : *𝚁𝚢𝚞𝚞𝚡*\n❏ *Used API :*\n *▢ zeks.xyz*\n *▢ api.lolhuman.xyz*\n\n⛾ *Buy me a coffee* \n ▢trakteer.id/Ryuux\n ▢saweria.co/Ryuux\n\n*✆ Find owner*\nryuux.bio.link\n\n*☭ Our group*\nhttps://chat.whatsapp.com/KMP69Wt1exE0wpoWnbHSLV\n\n\n*Made with 🧠 by 𝚁𝚢𝚞𝚞𝚡*`, "footerText":"Ngetes!",
+
+                  "buttonText": "COMMANDS",
+
+                  "listType": "SINGLE_SELECT",
+
+                  "sections": [
+
+                           {
+
+                             "rows": [
+
+                               {
+
+                              "title": "GROUP MENU",
+
+                              "rowId": `${data.prefix}groupmenu`
+
+                           },
+
+						   {
+
+                              "title": "DOWNLOAD MENU",
+
+                              "rowId": `${data.prefix}downloadmenu`
+
+                           },
+
+               {
+
+                              "title": "STICKER MENU",
+
+
+
+                              "rowId": `${data.prefix}stickermenu`
+
+                           },
+
+                {
+
+                              "title": "MARKER MENU",
+
+
+
+                              "rowId": `${data.prefix}markermenu`
+
+                           },
+
+                 {
+
+                              "title": "SEARCH MENU",
+
+
+
+                              "rowId": `${data.prefix}searchmenu`
+
+                           },
+
+                 {
+
+                              "title": "EDUCATION MENU",
+
+
+
+                              "rowId": `${data.prefix} educationmenu`
+
+                           },
+
+                   {
+
+                              "title": "RANDOM MENU",
+
+
+
+                              "rowId": `${data.prefix} randommenu`
+
+                           },
+
+                   {
+
+                              "title": "OTHER MENU",
+
+
+
+
+
+                              "rowId": `${data.prefix} othermenu`
+
+                           },
+
+                   {
+
+
+
+                              "title": "OWNER MENU",
+
+
+
+
+
+                              "rowId": `${data.prefix} ownermenu`
+
+                           },
+
+                   {
+
+                              "title": "Info",
+
+
+
+
+
+                              "rowId": `${data.prefix} info`
+
+                           }
+
+                        ]
+
+                     }]}}, {}) 
+
+            client.relayWAMessage(po, {waitForAck: true})
+
+        })
         /*DOWNLOADER*/
         Client.cmd.on('ytmp4', async (data) => {
             try {
